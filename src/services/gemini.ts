@@ -9,7 +9,7 @@ export async function getPlantRecommendation(userInput: {
 }) {
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-flash-preview",
+      model: "gemini-2.0-flash",
       contents: `대한민국 MZ세대 '식집사'를 위한 MBTI 기반 반려식물 추천 서비스입니다.
       사용자 정보:
       - MBTI: ${userInput.mbti}
